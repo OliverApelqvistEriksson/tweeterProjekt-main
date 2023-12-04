@@ -8,6 +8,9 @@ h1{
 }
 p {
     color: black;
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 0%;
 }
 
 a {
@@ -19,13 +22,28 @@ a:hover {
     text-decoration: inherit;
 }
 
+textarea {
+    width: 100%;
+}
+
+
+.logga {
+    /* Bredden är 95% av produktrutan */
+    width: 95%;
+    /* Höjden är 200px */
+    height: 200px;
+    /* Bilden skalas för att få plats, och kanterna görs rundade. */
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+
 .divmellanrum {
     padding-bottom: 10px;
 }
 
 .toppdel {
     width: 100%;
-    min-height: 200px;
+    min-height: 100px;
     height: fit-content;
     background-color: darkred;
     margin: auto;
@@ -79,7 +97,7 @@ a:hover {
 .merknappsDiv button {
     border: none;
     color: blue;
-    width: 30%;
+    width: fit-content;
     height: 100%;
 }
 
@@ -98,6 +116,9 @@ a:hover {
     height: 100%;
     width: 20%;
     float: left;
+    margin: auto;
+    text-align: center;
+    padding-top: 0%;
 }
 
 .elementRightSide {
@@ -105,7 +126,7 @@ a:hover {
     height: 200%;
     width: 20%;
     float: left;
-
+    text-align: center;
 }
 
 
@@ -122,6 +143,14 @@ a:hover {
     display: none;
 }
 
+.verticalAd {
+    padding-top: 15px;
+    margin: auto;
+    object-fit: scale-down;
+    overflow: hidden;
+    width: 90%;
+}
+
 
 
 /* Style the button and form container */
@@ -131,7 +160,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    border-radius: 10px;
     padding: 5px;
   }
 
@@ -150,16 +178,18 @@ a:hover {
     margin-top: 10px;
     background-color: darkslategrey;
     color: white;
+    width: 80%;
+    border-radius: 10px;
   }
 
   /* Style form elements */
   .form-container form {
-    width: 60%;
+    width: 100%;
     margin: auto;
     word-break:break-all;
   }
 
-  .form-container input, .form-container button {
+  .form-container input, .form-container button, .form-container textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -171,6 +201,7 @@ a:hover {
     color: white;
     border: none;
     cursor: pointer;
+    width: 40%;
   }
 
 
@@ -179,16 +210,16 @@ a:hover {
         width: 0%;
     }
     .elementMiddlePart {
-        width: 75%;
+        width: 70%;
         margin: 0%;
     }
     .elementLeftSide{
-        width: 25%;
+        width: 30%;
         margin: auto;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .elementLeftSide {
         width: 0%;
     }
@@ -199,5 +230,10 @@ a:hover {
         width: 99%;
         margin: auto;
     }
-
+    .form-container {
+    width: 99%;
+    }
+    .dropdown-button {
+        width: 90%;
+    }
 }
