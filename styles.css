@@ -85,7 +85,6 @@ a:hover {
 
 .wholeBlock {
     width: 100%;
-    background-color: lightgrey;
     border: none;
     margin: auto;
     padding: 1px;
@@ -96,14 +95,12 @@ a:hover {
 
 .elementLeftSide {
     min-height: 500px;
-    background-color: lightgrey;
     height: 100%;
     width: 20%;
     float: left;
 }
 
 .elementRightSide {
-    background-color: lightgrey;
     min-height: 500px;
     height: 200%;
     width: 20%;
