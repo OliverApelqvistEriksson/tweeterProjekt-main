@@ -1,0 +1,32 @@
+
+.elementMiddlePart {
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 992px) {
+    .elementRightSide {
+        width: 0%;
+    }
+    .elementMiddlePart {
+        width: 100%;
+        margin: auto;
+    }
+    .elementLeftSide{
+        width: 0%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .elementLeftSide {
+        width: 0%;
+    }
+    .elementRightSide {
+        width: 0%;
+    }
+    .elementMiddlePart {
+        width: 99%;
+        margin: auto;
+    }
+    
+}

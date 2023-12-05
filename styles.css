@@ -162,7 +162,7 @@ textarea {
     padding: 5px;
   }
 
-  .dropdown-button {
+.dropdown-button {
     background-color: whitesmoke;
     color: darkslategrey;
     padding: 10px;
@@ -171,7 +171,7 @@ textarea {
     cursor: pointer;
   }
 
-  .form-container {
+.form-container {
     display: none;
     padding: 5px;
     margin-top: 10px;
@@ -182,26 +182,33 @@ textarea {
   }
 
   /* Style form elements */
-  .form-container form {
+.form-container form {
     width: 100%;
     margin: auto;
     word-break:break-all;
   }
 
-  .form-container input, .form-container button, .form-container textarea {
+.form-container input, .form-container button, .form-container textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
   }
 
-  .form-container button {
+.form-container button {
     background-color: darkred;
     color: white;
     border: none;
     cursor: pointer;
     width: 40%;
   }
+
+.karusellSize {
+    width: 20%;
+    max-height: 400px;
+    object-fit:fill;
+    overflow: hidden;
+}
 
 
 @media screen and (max-width: 992px) {
