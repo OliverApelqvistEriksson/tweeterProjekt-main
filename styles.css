@@ -45,7 +45,7 @@ textarea {
     width: 100%;
     min-height: 100px;
     height: fit-content;
-    background-color: darkred;
+    background-color: whitesmoke;
     margin: auto;
     padding: 5px;
     text-align: center;
@@ -55,7 +55,7 @@ textarea {
     width: 90%;
     min-height: fit-content;
     height: fit-content;
-    background-color: lightgrey;
+    background-color: white;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 1%;
@@ -131,7 +131,6 @@ textarea {
 
 
 .elementMiddlePart {
-    background-color: darkred;
     min-height: 600px;
     height: inherit;
     width: 60%;
