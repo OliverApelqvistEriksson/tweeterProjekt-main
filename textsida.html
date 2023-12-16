@@ -36,6 +36,7 @@
                 <li class="nav-item">
                   <a class="nav-link " href="omoss.html">Om oss på sAndbox</a>
                 </li>
+                
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,6 +44,28 @@
               </form>
             </div>
           </nav>
+
+          <div class="container text-center divmellanrum">
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown-container">
+                        <div class="button-container">
+                            <button class="dropdown-button" onclick="toggleForm()">Skapa inlägg!!</button>
+                            <div class="form-container" id="myForm" method="post">
+                              <form method="post" name="createForm">
+                                <label for="createTitle">Title:</label>
+                                <input type="text" name="createTitle" autocomplete="off" placeholder="Title">
+                                <label for="createKontent">Kontent:</label>
+                                <textarea name="createKontent" rows="10" placeholder="kontent"></textarea>                              
+                                <button type="submit" value="submit" id="submit">SKAPA!!!</button>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
 
         <div class="wholeBlock">                    
                     <div class="column">
@@ -57,7 +80,7 @@
                                 </div>
                                 <div class="brodtext" id="limptext">                             
                                 </div>
-
+                                <p class="idNummer">Inläggsnummer : 63425462</p>
                             </div>
                         
                     </div>

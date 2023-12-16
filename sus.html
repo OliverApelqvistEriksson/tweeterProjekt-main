@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets API Example</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <div id="chart_div"></div>
+
+  <script>
+    // Replace 'YOUR_PUBLISHED_SHEET_URL' with the published URL of your Google Sheet
+    const sheetUrl = 'https://docs.google.com/spreadsheets/d/1FdMQZex1bsROH6vYK0luLJrwUhjf8xqPp2GzGd46_FM/edit#gid=0';
+
+    // Load Google Visualization API
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set callback function to draw chart
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback function to draw chart
+    function drawChart() {
+      // Use Google Visualization API to fetch data directly from the published sheet URL
+      const query = new google.visualization.Query(sheetUrl);
+
+      // Send the query request
+      query.send(handleQueryResponse);
+    }
+
+    // Callback function to handle the query response
+    function handleQueryResponse(response) {
+      if (response.isError()) {
+        console.error('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      // Create and draw the chart using the response data
+      const data = response.getDataTable();
+      const chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, {});
+    }
+  </script>
+</body>
+</html>
