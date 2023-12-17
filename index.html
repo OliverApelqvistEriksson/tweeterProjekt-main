@@ -20,7 +20,7 @@
             </a>
         </div>
         <!-- En navbar som har diverse knappar som  leder till olika .html-filer -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
             <a class="navbar-brand" href="index.html">sAndbox</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -65,7 +65,7 @@
 
             <!-- Hela sidoblocket med vänster, mitten och högerled. -->
         <div class="wholeBlock">                    
-          <div class="column">
+          <div class="column sticky">
             <!-- Reklam-space -->
               <div class="elementLeftSide">
                   <img src="images/stockAdExample.jpg" class="verticalAd">                                
@@ -75,20 +75,11 @@
           <div class="column">
             <!-- Mittdelen innehåller alla inlägg. -->
               <div class="elementMiddlePart">
-
-                <div class="sakbox"> <!-- En sakbox är ett inlägg som innehåller en text. -->
-                    <a href="textsida.html?Tit=Hello=le&Brod=World=text">
-                        <div class="titeln" id="titeln">   </div> <!-- klassen kopplas till .css, id't kopplas till .js -->
-                        <div class="brodtext" id="brodtext">   </div>  <!-- Obs -  Brodtext är för övrigt mitt namn för brödtexten i inlägget. -->
-                    </a>
-                    <div class="merknappsDiv"> <!-- Vill man se mer kan man toggla genom denna knapp, som i .js ökar eller minskar texten. -->
-                        <button onclick="toggleReadMore()">Toggle view</button>
-                    </div>
-                </div>
+                <div id="saker"></div>
               </div>
           </div>
 
-          <div class="column"> 
+          <div class="column sticky"> 
               <div class="elementRightSide"> <!-- Sidorna har egna klasser för att kunna försvinna vid minskning av skärmen. -->
                   <img src="images/stockAdExample.jpg" class="verticalAd">
               </div>
@@ -98,6 +89,10 @@
 
         <!-- Scriptar till min javascript, som bland annat ska få inläggen att fungera, samt togglar textlängden.  -->
         <script src="javaScript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     </body>
 
 </html>

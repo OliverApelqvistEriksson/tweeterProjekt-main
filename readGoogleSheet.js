@@ -1,3 +1,7 @@
+
+// Allt här är direkt taget från internet/chatGPT så bara kolla inte igenom detta.
+
+
 const { google } = require('googleapis');
 
 // Replace 'YOUR_API_KEY' and 'YOUR_SPREADSHEET_ID' with actual values

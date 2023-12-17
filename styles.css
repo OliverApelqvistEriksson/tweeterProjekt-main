@@ -132,7 +132,6 @@ textarea {
     text-align: center;
 }
 
-
 .elementMiddlePart {
     min-height: 600px;
     height: inherit;
@@ -153,9 +152,19 @@ textarea {
     width: 90%;
 }
 
+.navbar {
+    z-index: 1000;
+}
 
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+}
+.navbar.sticky {
+    top:0;
+}
 
-/* Style the button and form container */
 .button-container {
     
     display: flex;
@@ -184,7 +193,6 @@ textarea {
     border-radius: 10px;
   }
 
-  /* Style form elements */
 .form-container form {
     width: 100%;
     margin: auto;
