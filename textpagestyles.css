@@ -3,6 +3,7 @@
     background-color: #FFFFFF;
 }
 
+/*Jag ville att textsidan skulle förändras annorlunda*/
 @media screen and (max-width: 992px) {
     .elementRightSide {
         width: 0%;
